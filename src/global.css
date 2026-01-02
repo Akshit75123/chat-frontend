@@ -1,0 +1,31 @@
+/* Ensure the whole page background is dark */
+body, html {
+    background-color: #1e1e1e; /* Dark gray */
+    color: white; /* Default text color */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent default white overflow */
+  }
+  
+  /* Hide scrollbar in Webkit browsers */
+  ::-webkit-scrollbar {
+    width: 8px; /* Adjust size */
+    background: transparent;
+  }
+  
+  /* Track (the background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #2d2d2d; /* Match dark theme */
+  }
+  
+  /* Handle (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777;
+  }
+  
